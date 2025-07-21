@@ -1,0 +1,88 @@
+:root {
+    --color-primary: #2128b0;
+    /* Jaune vif */
+    --color-secondary: #1b1a19;
+    /* Marron foncé */
+
+    /* Couleurs bleues harmonieuses */
+    --color-blue-denim: #2A4365;
+    /* Bleu sombre et élégant */
+    --color-blue-night: #1E3A5F;
+    /* Bleu nuit doux, profond */
+    --color-blue-petrol: #3B7C9C;
+    /* Bleu moyen chaud */
+    --color-blue-accent: #2563EB;
+    /* Bleu vif (type Tailwind blue-600) */
+    --action-color: #27a762;
+}
+
+.hero-background {
+    filter: blur(100px);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.fade-in-right,
+.fade-in-left {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-left {
+    transform: translateX(-40px);
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 0%;
+    font-family: "Rubik", sans-serif;
+    /* Jaune vif */
+}
+
+main {
+    padding: 0%;
+}
+
+.box {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form fieldset label {
+    border-radius: 2rem;
+}
+
+@keyframes zoomHero {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+.animate-zoom {
+    animation: zoomHero 200s ease-in-out infinite;
+}

@@ -1,0 +1,38 @@
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV de K.F.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/slye.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="text-gray-800 w-[100vw] h-[100vh] ">
+
+    <header id="header" class="fade-in"></header>
+    <section id="hero" class="fade-in"></section>
+    <section class="px-3" id="cta" class="fade-in"></section>
+    <section class="px-3" id="competences" class="fade-in"></section>
+    <section class="px-3" id="formations" class="fade-in"></section>
+    <section class="px-3" id="experiences" class="fade-in"></section>
+    <section class="px-3" id="references" class="fade-in"></section>
+    <section id="contact" class="fade-in"></section>
+    <footer id="footer" class="fade-in"></footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Attendre que tous les composants soient injectés puis appliquer les animations
+        window.addEventListener("load", () => {
+            const fadeIns = document.querySelectorAll(".fade-in");
+            fadeIns.forEach((el, i) => {
+                setTimeout(() => el.classList.add("visible"), i * 150);
+            });
+        });
+    </script>
+</body>
+
+</html>

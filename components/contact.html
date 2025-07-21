@@ -1,0 +1,40 @@
+<div id="contact" class="bg-[var(--color-blue-denim)] text-white py-12 px-6">
+    <div class="max-w-2xl mx-auto">
+
+        <!-- Titre -->
+        <h2 class="text-3xl font-bold text-center text-white mb-8">
+            Me contacter
+        </h2>
+
+        <!-- Formulaire -->
+        <form action="#" method="POST"
+            class="space-y-6 bg-white bg-opacity-10 p-6 rounded-xl shadow-md backdrop-blur-sm">
+
+            <fieldset class="flex flex-col">
+                <label for="name" class="text-sm font-medium text-white mb-1">Nom</label>
+                <input type="text" id="name" name="name" required
+                    class="rounded-lg px-4 py-2 border border-gray-300 text-black focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
+            </fieldset>
+
+            <fieldset class="flex flex-col">
+                <label for="email" class="text-sm font-medium text-white mb-1">Email</label>
+                <input type="email" id="email" name="email" required
+                    class="rounded-lg px-4 py-2 border border-gray-300 text-black focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
+            </fieldset>
+
+            <fieldset class="flex flex-col">
+                <label for="message" class="text-sm font-medium text-white mb-1">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                    class="rounded-lg px-4 py-2 border border-gray-300 text-black focus:ring-2 focus:ring-yellow-400 focus:outline-none"></textarea>
+            </fieldset>
+
+            <div class="text-center">
+                <button type="submit"
+                    class="bg-[var(--action-color)] hover:bg-white  text-black font-semibold px-6 py-2 rounded-full transition duration-300 shadow-lg">
+                    ✉️ Envoyer
+                </button>
+            </div>
+        </form>
+
+    </div>
+</div>

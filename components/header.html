@@ -1,0 +1,28 @@
+<nav class="bg-[var(--color-secondary)] text-white px-6 py-4 shadow-md">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Kenza - web CV</h1>
+
+        <!-- Burger Button -->
+        <button id="burgerBtn" class="md:hidden" aria-label="Toggle menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex gap-6 items-center">
+            <a href="#hero" class="hover:text-[var(--color-blue-accent)] hover:underline">Accueil</a>
+            <a href="#references" class="hover:text-[var(--color-blue-accent)] hover:underline">Références</a>
+            <a href="#contact" class="bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden mt-4 flex-col gap-3 px-4 text-sm">
+        <a href="#hero" class="block py-2 hover:text-[var(--color-blue-accent)] hover:underline">Accueil</a>
+        <a href="#references" class="block py-2 hover:text-[var(--color-blue-accent)] hover:underline">Références</a>
+        <a href="#contact"
+            class="inline-block bg-blue-600 px-4 py-2 rounded-full hover:bg-blue-700 transition mt-2">Contact</a>
+    </div>
+</nav>
